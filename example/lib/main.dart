@@ -18,7 +18,7 @@ void main() async {
     proxyHost = httpProxy.host;
     proxyPort = httpProxy.port;
 
-    HttpOverrides.global=httpProxy;
+    HttpOverrides.global = httpProxy;
     runApp(MyApp());
   }
 }
@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _future = get(url);
+    _future = get(Uri.parse(url));
   }
 
   @override
@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
                       return SingleChildScrollView(
                         scrollDirection: Axis.vertical,
                         child: Text(
-                          snapshot.data.body.toString(),
+                          (snapshot.data as Response).body.toString(),
                         ),
                       );
                     }

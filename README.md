@@ -1,6 +1,6 @@
-# http_proxy
+# http_proxy_updated
 
-http_proxy get the proxy settings of mobile device automatically,and set up proxy for [http](https://pub.dev/packages/http).
+http_proxy_updated get the proxy settings of mobile device automatically,and set up proxy for [http](https://pub.dev/packages/http).
 
 ## Getting Started
 

@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-import 'package:http_proxy/http_proxy.dart';
+import 'package:http_proxy/http_proxy_updated.dart';
 
 var proxyHost;
 var proxyPort;
